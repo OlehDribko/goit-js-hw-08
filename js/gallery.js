@@ -72,7 +72,7 @@ function createGaleryCards(images) {
     const img = document.createElement("img");
     const link = document.createElement("a");
     link.href = original;
-    li.classList.add('gallery-list')
+    li.classList.add("gallery-list");
     link.classList.add("gallery-link");
     img.classList.add("gallery-image");
     img.src = preview;
@@ -91,7 +91,7 @@ gallery.addEventListener("click", (event) => {
   event.preventDefault();
 
   if (event.target.nodeName === "IMG") {
-    const  modalImg = event.target.dataset.source;
+    const modalImg = event.target.dataset.source;
     const instance = basicLightbox.create(`
     <img class="modal-img" src="${modalImg}">
 `);
