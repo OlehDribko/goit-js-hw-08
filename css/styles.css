@@ -1,0 +1,19 @@
+ol,
+ul {
+  list-style: none;
+}
+
+.gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    width: calc(3 * (240px + 24px) - 24px);
+    margin: 0 auto;
+}
+.gallery-image{
+    max-width: 240px;
+    width:calc((100% - (24px * 2) / 3));
+}
